@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: lightgreen;
+}
+
+.container__projects{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap:1rem;
+}
+.project{
+
+    background-color: red;
+}
+
+.project__js{
+    background-color: lightblue;
+    grid-column: 2 / 4;
+}

@@ -145,6 +145,7 @@
     gap:1rem;
     padding: 1rem;
     border-radius: 1rem;
+    transition: transform 1s;
 }
 
 .score__result .score .topic{
@@ -207,10 +208,7 @@ a{
     align-items: center;
     margin-bottom: 1.5rem;
 }
-.btn div:hover{
-    background:linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
-    cursor: pointer;
-}
+
 .btn div{
     background-color: var(--Darkgrayblue);
     width: 100%;
@@ -222,7 +220,17 @@ a{
     color: var(--White);
     font-weight: 500;
     font-size: large;
-    
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.btn div:hover{
+    background:linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+    transform: scale(1.1);
+}
+
+.score__result .score:hover{
+    transform: scale(1.05);
 }
 
 
