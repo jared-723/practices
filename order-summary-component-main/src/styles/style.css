@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root{
+    /* ### Primary */
+
+    --Paleblue: hsl(225, 100%, 94%);
+    --PaleblueLighter: hsl(225, 100%, 94%, 0.4);
+    --Brightblue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Paleblue);
+    padding: 0rem 0.5rem;
+}
+
+.card{
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.imgCard{
+    height: 30%;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.infoCard{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Verypaleblue);
+    padding:2rem ;
+    gap: 1rem;
+    text-align: center;
+}
+
+.infoCard h2{
+    font-weight: 700;
+}
+
+.description{
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    color:var(--Desaturatedblue);
+}
+
+.planCard{
+    background-color: var(--PaleblueLighter);
+    padding: 1rem 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-areas: 
+            "icon anual change"
+            "icon price change";
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.icon{
+    grid-area: icon;
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+}
+
+.typePlan{
+    grid-area: anual;
+    font-weight: 900;
+}
+
+.pricePlan{
+    grid-area: price;
+    color: var(--Desaturatedblue);
+}
+
+.changePlan{
+    grid-area: change;
+    align-self: center;
+    justify-self: flex-end;
+    font-weight: 900;
+    text-decoration: underline;
+    color:var(--Brightblue);
+    cursor: default;
+    transition: opacity 0.3s;
+}
+.changePlan:hover{
+    text-decoration: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.bottonProceed{
+    background-color: var(--Brightblue);
+    width: 100%;
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    font-weight: 900;
+    color: var(--Paleblue);
+    cursor: default;
+    transition: opacity 0.3s;
+}
+.bottonProceed:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.bottonCancel{
+    background-color: none;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-weight: 900;
+    color: var(--Desaturatedblue);
+    cursor: default;
+    transition: color 0.3s;
+}
+.bottonCancel:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
